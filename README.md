@@ -18,7 +18,7 @@ For more informations on its parameterization, please see the user manual.
 2 stacks of 400px * 400px.
 
 The results after running the plugin should be:
--Final Z rotation: 5°
--Final X rotation: 1°
--Final Y rotation: 1°
+- Final Z rotation: 5°
+- Final X rotation: 1°
+- Final Y rotation: 1°
 

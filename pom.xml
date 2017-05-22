@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>sc.fiji</groupId>
+	<artifactId>2D_SIFT_in_3D_Space</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+
+	<name>plugins/2D_SIFT_in_3D_Space.jar</name>
+	<description>A Maven project implementing 2D_SIFT_in_3D_Space plugin</description>
+
+	<developers>
+		<developer>
+			<id>cfrindel</id>
+			<name>Carole FRINDEL</name>
+			<email>carole.frindel@creatis.insa-lyon.fr</email>
+			<url>http://www.creatis.insa-lyon.fr/~frindel/</url>
+			<organization>CREATIS Lab / The University of Lyon</organization>
+			<organizationUrl>http://www.creatis.insa-lyon.fr/site/index.html</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>+1</timezone>
+		</developer>
+		<developer>
+			<id>cmurtin</id>
+			<name>Chloe MURTIN</name>
+			<email>chloe.murtin@gmail.com</email>
+			<organization>Institute of Molecular and Cellular Biosciences / The University of Tokyo</organization>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>+9</timezone>
+		</developer>
+		<developer>
+			<id>rosahuaman</id>
+			<name>Rosa HUAMAN</name>
+			<email>rosavcalm@hotmail.com</email>
+			<organization>INSA de Lyon</organization>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>+9</timezone>
+		</developer>
+	</developers>
+
+	<properties>
+		<main-class>SIFT_Volume_Stitching</main-class>
+	</properties>
+	
+	<repositories>
+	  <!-- NB: for project parent -->
+	  <repository>
+	    <id>imagej.public</id>
+	    <url>http://maven.imagej.net/content/groups/public</url>
+	  </repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+			<version> 1.49q </version>
+		</dependency>
+		<dependency>
+		  <groupId>sc.fiji</groupId>
+		  <artifactId>Stitching_</artifactId>
+		  <version>3.1.0</version>
+		</dependency>
+		<dependency>
+		  <groupId>mpicbg</groupId>
+		  <artifactId>mpicbg_</artifactId>
+		  <version>20120621</version>
+	</dependency>
+	<dependency>
+    	<groupId>org.apache.commons</groupId>
+    	<artifactId>commons-lang3</artifactId>
+    	<version>3.0</version>
+	</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>${main-class}</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

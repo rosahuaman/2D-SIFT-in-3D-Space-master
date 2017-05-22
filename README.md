@@ -3,7 +3,7 @@
 This code is a ImageJ/Fiji plugin. It has been designed for the registration and the stitching of two tilted half image stacks from the same sample.
 For more informations on its parameterization, please see the user manual.
 
-# Running project on eclipse
+# Running project on Eclipse
 
 **1-** Download and install Eclipse Java from: [Eclipse Download](https://www.eclipse.org/downloads/)
 

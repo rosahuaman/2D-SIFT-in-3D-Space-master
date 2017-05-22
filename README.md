@@ -12,3 +12,13 @@ For more informations on its parameterization, please see the user manual.
 **3-** Import source by clicking on 'Directory...'. Eclipse will recognize it as an Eclipse Project and depending on your Eclipse version, it could be recognized as a 'Maven project'. To finish the import, click on 'Finish'.
 
 **4-** Once Eclipse has checked there is no error, you can click on the project and click on 'Run'.
+
+# Predefined exemple
+
+2 stacks of 400px * 400px.
+
+The results after running the plugin should be:
+-Final Z rotation: 5°
+-Final X rotation: 1°
+-Final Y rotation: 1°
+
